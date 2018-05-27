@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed4f109e-6de7-41c2-878e-2cf718a90b25" name="Default" comment="finished &quot;battle_list&quot;">
+    <list default="true" id="ed4f109e-6de7-41c2-878e-2cf718a90b25" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/battle_input.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/battle_insert.php" beforeDir="false" afterPath="$PROJECT_DIR$/battle_insert.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/battle_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/battle_list.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hero_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/hero_list.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/player_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_list.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,8 +73,8 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
+            <state relative-caret-position="492">
+              <caret line="45" column="160" lean-forward="true" selection-start-line="45" selection-start-column="149" selection-end-line="45" selection-end-column="160" />
             </state>
           </provider>
         </entry>
@@ -84,8 +82,8 @@
       <file leaf-file-name="battle_insert.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/battle_insert.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="650">
+              <caret line="55" column="59" selection-start-line="55" selection-start-column="59" selection-end-line="55" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -93,8 +91,17 @@
       <file leaf-file-name="battle_list.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/battle_list.php">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="battle_input.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/battle_input.php">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="600">
-              <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+              <caret line="133" column="51" lean-forward="true" selection-start-line="133" selection-start-column="51" selection-end-line="133" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -153,9 +160,10 @@
         <option value="$PROJECT_DIR$/util.php" />
         <option value="$PROJECT_DIR$/player_list.php" />
         <option value="$PROJECT_DIR$/hero_list.php" />
-        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/battle_insert.php" />
         <option value="$PROJECT_DIR$/battle_list.php" />
+        <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/battle_input.php" />
       </list>
     </option>
   </component>
@@ -172,9 +180,10 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="1437" />
-    <option name="height" value="1047" />
+    <option name="x" value="170" />
+    <option name="y" value="-20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -249,7 +258,7 @@
       <workItem from="1527305969177" duration="1501000" />
       <workItem from="1527344834195" duration="7215000" />
       <workItem from="1527397407916" duration="1970000" />
-      <workItem from="1527399398598" duration="31635000" />
+      <workItem from="1527399398598" duration="32807000" />
     </task>
     <task id="LOCAL-00001" summary="basic operations">
       <created>1527349630300</created>
@@ -293,11 +302,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527429075879</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="finished &quot;Input Battle&quot;">
+      <created>1527439373271</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1527439373271</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47764000" />
+    <option name="totallyTimeSpent" value="48936000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -311,9 +327,10 @@
       <window_info anchor="bottom" id="Run" order="8" />
       <window_info anchor="bottom" id="Terminal" order="4" />
       <window_info anchor="right" id="Remote Host" order="1" weight="0.3296875" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.103125" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.103125" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="0" weight="0.3296875" />
+      <window_info anchor="bottom" id="Find" order="7" weight="0.32978722" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
@@ -324,33 +341,7 @@
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32943678" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.32978722" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="5" />
-      <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="1" weight="0.3296875" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.10729167" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="8" />
-      <window_info anchor="bottom" id="Find" order="7" weight="0.32978722" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Database Console" order="14" weight="0.32943678" />
-      <window_info anchor="right" id="Database" order="0" weight="0.3296875" />
-      <window_info anchor="bottom" id="Terminal" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5005208" side_tool="true" weight="0.32978722" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.3287234" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info anchor="bottom" id="Messages" order="0" sideWeight="0.49947917" weight="0.32978722" />
-      <window_info id="Favorites" order="0" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -365,7 +356,8 @@
     <MESSAGE value="add &quot;Hero&quot; functions" />
     <MESSAGE value="fix navigation" />
     <MESSAGE value="implement &quot;battle_insert&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement &quot;battle_insert&quot;" />
+    <MESSAGE value="finished &quot;Input Battle&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished &quot;Input Battle&quot;" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/header.php">
@@ -603,13 +595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="43" column="30" lean-forward="true" selection-start-line="43" selection-start-column="30" selection-end-line="43" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/player_insert.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -626,15 +611,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/battle_insert.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="650">
+          <caret line="55" column="59" selection-start-line="55" selection-start-column="59" selection-end-line="55" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="45" column="160" lean-forward="true" selection-start-line="45" selection-start-column="149" selection-end-line="45" selection-end-column="160" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battle_input.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="133" column="51" lean-forward="true" selection-start-line="133" selection-start-column="51" selection-end-line="133" selection-end-column="51" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/battle_list.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        <state relative-caret-position="48">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
