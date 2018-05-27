@@ -17,7 +17,6 @@ function msg($msg){ // 경고 메세지 출력 후 이전 페이지로 이동
             history.go(-1);
         </script>
     ";
-    exit;
 }
 
 
@@ -28,7 +27,6 @@ function s_msg($msg){   // 일반 메세지 출력
             window.alert('$msg');
         </script>
     ";
-    exit;
 }
 
 function check_injection($input){

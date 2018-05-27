@@ -4,10 +4,11 @@ include "util.php";
 
 $conn = dbconnect($host,$dbid,$dbpass,$dbname);
 
-$player_id = "rikuforever";
-$player_name = "Riku";
+$player_id = $_POST['player_id'];
+$player_name = $_POST['player_name'];
 
 check_injection($player_id);
+check_injection($player_name);
 
 // check duplicates
 $query = 'SELECT player_id FROM Player WHERE player_id="'.$player_id.'"';
@@ -23,9 +24,11 @@ if($num){   // have duplicates
 
     if($res){
         s_msg("추가 완료!");
+        echo "<meta http-equiv='refresh' content='0;url=player_list.php'>";
     }
     else{
-        msg("unsuccessful insertion");
+        s_msg("unsuccessful insertion");
+        echo "<meta http-equiv='refresh' content='0;url=player_list.php'>";
     }
 }
 
