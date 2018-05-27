@@ -12,7 +12,7 @@ $query = "SELECT * FROM Player";
     <h5><b><i class="fas fa-user-plus"></i> Add Player </b></h5>
 </header>
 <script>
-    function search_value_check(){
+    function value_check(){
         var form = document.player_add_form;
         if(!form.player_id.value){
             alert("Please fill in ID.");
@@ -28,7 +28,7 @@ $query = "SELECT * FROM Player";
     }
 </script>
 <div class="w3-panel">
-    <form name="player_add_form" method="post" onsubmit="return search_value_check()" action="player_insert.php">
+    <form name="player_add_form" method="post" onsubmit="return value_check()" action="player_insert.php">
         <div class="form-group col-md-5">
             <label for="player_id">Player ID</label>
             <input type="text" class="form-control" name="player_id" id="player_id" placeholder="Player ID" maxlength="50"/>
