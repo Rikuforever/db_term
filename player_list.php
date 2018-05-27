@@ -71,7 +71,7 @@ $query = "SELECT * FROM Player";
                             <td>'.$row[1].'</td>
                             <td>'.$row[2].'</td>
                             <td>
-                                <button type="button" class="btn btn-danger" href="">Delete</button>
+                                <a class="btn btn-danger" href="player_delete.php?id='.$row[0].'">Delete</a>
                             </td>
                         </tr>
                     ';

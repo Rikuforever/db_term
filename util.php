@@ -30,8 +30,9 @@ function s_msg($msg){   // 일반 메세지 출력
 }
 
 function check_injection($input){
-    $input = preg_replace("/[\r\n\s\t\’\;\”\=\-\-\#\/*]+/”,“", $input);
+    $input = preg_replace("/[\r\n\s\t\'\;\"\=\-\-\#\/*]+/","", $input);
     if(preg_match('/(union|select|from|where)/i', $input)){
         msg("No SQL-Injection");
     }
+    return $input;
 }
