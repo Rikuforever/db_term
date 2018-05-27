@@ -45,6 +45,7 @@ function get_address(){
         <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
         <a href="player_list.php" class="w3-bar-item w3-button w3-padding <? if(get_address() == "player_list.php") echo "w3-blue"; ?>"><i class="fa fa-users fa-fw"></i>  Players</a>
         <a href="hero_list.php" class="w3-bar-item w3-button w3-padding <? if(get_address() == "hero_list.php") echo "w3-blue"; ?>"><i class="fa fa-eye fa-fw"></i>  Heores</a>
+        <a href="battle_list.php" class="w3-bar-item w3-button w3-padding <? if(get_address() == "battle_list.php") echo "w3-blue"; ?>"><i class="fa fa-eye fa-fw"></i>  Battles</a>
     </div>
 </nav>
 

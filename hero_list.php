@@ -4,7 +4,6 @@ include "config.php";
 include "util.php";
 
 $conn = dbconnect($host,$dbid,$dbpass,$dbname);
-$query = "SELECT * FROM Hero";
 ?>
 
     <!-- Add hero -->
@@ -66,6 +65,7 @@ $query = "SELECT * FROM Hero";
                 </thead>
                 <tbody>
                 <?php
+                $query = "SELECT * FROM Hero";
                 $ret = mysqli_query($conn, $query);
                 $index = 1;
                 while($row = mysqli_fetch_row($ret)){

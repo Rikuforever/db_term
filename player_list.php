@@ -4,7 +4,6 @@ include "config.php";
 include "util.php";
 
 $conn = dbconnect($host,$dbid,$dbpass,$dbname);
-$query = "SELECT * FROM Player";
 ?>
 
     <!-- Add Player -->
@@ -61,6 +60,7 @@ $query = "SELECT * FROM Player";
             </thead>
             <tbody>
             <?php
+                $query = "SELECT * FROM Player";
                 $ret = mysqli_query($conn, $query);
                 $index = 1;
                 while($row = mysqli_fetch_row($ret)){
