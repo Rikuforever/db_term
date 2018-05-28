@@ -3,10 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ed4f109e-6de7-41c2-878e-2cf718a90b25" name="Default" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/battle_detail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rarity_insert.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rarity_list.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/skin_list.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/battle_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/battle_list.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/css/bootstrap-grid.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/css/bootstrap-grid.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bootstrap/css/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/css/bootstrap-reboot.css" afterDir="false" />
@@ -21,6 +22,9 @@
       <change beforePath="$PROJECT_DIR$/fontawesome/webfonts/fa-brands-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/fontawesome/webfonts/fa-brands-400.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fontawesome/webfonts/fa-regular-400.svg" beforeDir="false" afterPath="$PROJECT_DIR$/fontawesome/webfonts/fa-regular-400.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fontawesome/webfonts/fa-solid-900.svg" beforeDir="false" afterPath="$PROJECT_DIR$/fontawesome/webfonts/fa-solid-900.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hero_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/hero_list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/player_list.php" beforeDir="false" afterPath="$PROJECT_DIR$/player_list.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,56 +55,68 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="672">
+              <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/footer.php">
+      <file leaf-file-name="rarity_list.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rarity_list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="battle_insert.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battle_insert.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="536">
-              <caret line="55" column="59" selection-start-line="55" selection-start-column="59" selection-end-line="55" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="battle_list.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/battle_list.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="60" column="74" selection-start-line="60" selection-start-column="74" selection-end-line="60" selection-end-column="74" />
+            <state relative-caret-position="-384">
+              <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#185#209#0#HTML" expanded="true" />
+                <element signature="e#3226#3245#0#HTML" expanded="true" />
+                <element signature="e#3292#3311#0#HTML" expanded="true" />
+                <element signature="e#3358#3377#0#HTML" expanded="true" />
+                <element signature="e#2989#3008#0#HTML" expanded="true" />
+                <element signature="e#3426#3445#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="battle_detail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/battle_detail.php">
+      <file leaf-file-name="rarity_insert.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rarity_insert.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="240">
+              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hero_list.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hero_list.php">
+      <file leaf-file-name="hero_insert.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hero_insert.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="87" column="10" selection-start-line="50" selection-end-line="87" selection-end-column="10" />
+            <state relative-caret-position="696">
+              <caret line="29" column="65" lean-forward="true" selection-start-line="9" selection-end-line="29" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="skin_list.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/skin_list.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="85" column="24" lean-forward="true" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
+              <folding>
+                <element signature="e#1840#1858#0#HTML" expanded="true" />
+                <element signature="e#1902#1921#0#HTML" expanded="true" />
+                <element signature="e#1966#1985#0#HTML" expanded="true" />
+                <element signature="e#2032#2051#0#HTML" expanded="true" />
+                <element signature="e#2100#2119#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="player_list.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/player_list.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-112">
+              <caret line="36" column="124" selection-start-line="36" selection-start-column="124" selection-end-line="36" selection-end-column="124" />
             </state>
           </provider>
         </entry>
@@ -108,17 +124,17 @@
       <file leaf-file-name="battle_input.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/battle_input.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+            <state relative-caret-position="168">
+              <caret line="134" column="47" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="util.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/util.php">
+      <file leaf-file-name="hero_list.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hero_list.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
+            <state relative-caret-position="96">
+              <caret line="37" selection-start-line="37" selection-end-line="41" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -136,16 +152,19 @@
     <findStrings>
       <find>search_value_check(</find>
       <find>player_id</find>
-      <find>player</find>
       <find>red</find>
       <find>menu</find>
       <find>open</find>
+      <find>player</find>
+      <find>skin</find>
     </findStrings>
     <replaceStrings>
       <replace>hero</replace>
       <replace>hero_name</replace>
       <replace>battle</replace>
       <replace>blue</replace>
+      <replace>skin</replace>
+      <replace>rarity</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -168,13 +187,16 @@
         <option value="$PROJECT_DIR$/hero_insert.php" />
         <option value="$PROJECT_DIR$/hero_delete.php" />
         <option value="$PROJECT_DIR$/util.php" />
-        <option value="$PROJECT_DIR$/player_list.php" />
-        <option value="$PROJECT_DIR$/hero_list.php" />
         <option value="$PROJECT_DIR$/battle_insert.php" />
-        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/battle_input.php" />
         <option value="$PROJECT_DIR$/battle_detail.php" />
         <option value="$PROJECT_DIR$/battle_list.php" />
+        <option value="$PROJECT_DIR$/player_list.php" />
+        <option value="$PROJECT_DIR$/hero_list.php" />
+        <option value="$PROJECT_DIR$/skin_list.php" />
+        <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/rarity_list.php" />
+        <option value="$PROJECT_DIR$/rarity_insert.php" />
       </list>
     </option>
   </component>
@@ -270,7 +292,7 @@
       <workItem from="1527397407916" duration="1970000" />
       <workItem from="1527399398598" duration="32869000" />
       <workItem from="1527471347991" duration="3936000" />
-      <workItem from="1527483953866" duration="2413000" />
+      <workItem from="1527483953866" duration="6843000" />
     </task>
     <task id="LOCAL-00001" summary="basic operations">
       <created>1527349630300</created>
@@ -328,11 +350,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527440552453</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="cleaned &quot;battle_list.php&quot;">
+      <created>1527486832491</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1527486832491</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55347000" />
+    <option name="totallyTimeSpent" value="59777000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -341,7 +370,7 @@
       <window_info anchor="bottom" id="TODO" order="12" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5005208" side_tool="true" weight="0.32978722" />
       <window_info anchor="bottom" id="Database Changes" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="File Transfer" order="13" visible="true" weight="0.32553193" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.32553193" />
       <window_info anchor="bottom" id="Version Control" order="5" />
       <window_info anchor="bottom" id="Run" order="8" />
       <window_info anchor="bottom" id="Terminal" order="4" />
@@ -378,30 +407,10 @@
     <MESSAGE value="implement &quot;battle_insert&quot;" />
     <MESSAGE value="finished &quot;Input Battle&quot;" />
     <MESSAGE value="redesigned structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="redesigned structure" />
+    <MESSAGE value="cleaned &quot;battle_list.php&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleaned &quot;battle_list.php&quot;" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hero_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1653">
-          <caret line="87" column="10" lean-forward="true" selection-start-line="50" selection-end-line="87" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battle_input.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="27" lean-forward="true" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/util.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
-          <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/battle_list.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="798">
@@ -637,16 +646,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hero_insert.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/util.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="440">
           <caret line="37" column="1" selection-start-line="37" selection-start-column="1" selection-end-line="37" selection-end-column="1" />
         </state>
       </provider>
@@ -672,41 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/player_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="843">
-          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/battle_input.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hero_list.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="87" column="10" selection-start-line="50" selection-end-line="87" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/battle_detail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -723,11 +690,89 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/battle_list.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="60" column="74" selection-start-line="60" selection-start-column="74" selection-end-line="60" selection-end-column="74" />
+        <state relative-caret-position="360">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/battle_input.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="134" column="47" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hero_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="37" selection-start-line="37" selection-end-line="41" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/skin_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="85" column="24" lean-forward="true" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
+          <folding>
+            <element signature="e#1840#1858#0#HTML" expanded="true" />
+            <element signature="e#1902#1921#0#HTML" expanded="true" />
+            <element signature="e#1966#1985#0#HTML" expanded="true" />
+            <element signature="e#2032#2051#0#HTML" expanded="true" />
+            <element signature="e#2100#2119#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/player_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="36" column="124" selection-start-line="36" selection-start-column="124" selection-end-line="36" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hero_insert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="696">
+          <caret line="29" column="65" lean-forward="true" selection-start-line="9" selection-end-line="29" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rarity_list.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-384">
+          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#185#209#0#HTML" expanded="true" />
+            <element signature="e#3226#3245#0#HTML" expanded="true" />
+            <element signature="e#3292#3311#0#HTML" expanded="true" />
+            <element signature="e#3358#3377#0#HTML" expanded="true" />
+            <element signature="e#2989#3008#0#HTML" expanded="true" />
+            <element signature="e#3426#3445#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rarity_insert.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
         </state>
       </provider>
     </entry>

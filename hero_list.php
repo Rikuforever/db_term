@@ -30,7 +30,7 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
         <form name="hero_add_form" method="post" onsubmit="return value_check()" action="hero_insert.php">
             <div class="form-group col-md-5">
                 <label for="hero_name">Hero name</label>
-                <input type="text" class="form-control" name="hero_name" id="hero_name" placeholder="Hero name" maxlength="50"/>
+                <input type="text" class="form-control" name="hero_name" id="hero_name" placeholder="Hero name" minlength="1" maxlength="50"/>
             </div>
             <div class="form-group col-md-5">
                 <label for="hero_role">Hero role</label>

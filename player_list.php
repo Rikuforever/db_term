@@ -30,11 +30,11 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
     <form name="player_add_form" method="post" onsubmit="return value_check()" action="player_insert.php">
         <div class="form-group col-md-5">
             <label for="player_id">Player ID</label>
-            <input type="text" class="form-control" name="player_id" id="player_id" placeholder="Player ID" maxlength="50"/>
+            <input type="text" class="form-control" name="player_id" id="player_id" placeholder="Player ID" minlength="1" maxlength="50"/>
         </div>
         <div class="form-group col-md-5">
             <label for="player_name">Nickname</label>
-            <input type="text" class="form-control" name="player_name" id="player_name" placeholder="Nickname" maxlength="50"/>
+            <input type="text" class="form-control" name="player_name" id="player_name" placeholder="Nickname" minlength="1" maxlength="50"/>
         </div>
         <div class="form-group col-md-2">
             <button type="submit" class="btn btn-primary">Add</button>
