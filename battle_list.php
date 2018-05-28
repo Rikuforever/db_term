@@ -24,9 +24,16 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
             <tbody>
             <?php
             // Get battle_id
-            $query = "SELECT battle_id FROM Battle";
+            $query = "SELECT battle_id, battle_win FROM Battle";
             $ret_battle = mysqli_query($conn, $query);
             while($row_battle = mysqli_fetch_row($ret_battle)){
+                $red_attribute = ''; $blue_attribute = '';
+                if($row_battle[1] == 'Red' ){
+                    $red_attribute = 'class ="table-success"';
+                } else if ($row_battle[1] == 'Blue'){
+                    $blue_attribute = 'class ="table-success"';
+                }
+
                 echo '
                         <tr>
                             <th scope="row">'.$row_battle[0].'</th>
@@ -35,23 +42,23 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
                 $ret_detail_red = mysqli_query($conn, $query);
                 for($index = 0; $index < 6; $index++){
                     if($row_detail_red = mysqli_fetch_row($ret_detail_red)){
-                        echo '<td>'.$row_detail_red[0].'</td>';
+                        echo '<td '.$red_attribute.'>'.$row_detail_red[0].'</td>';
                     } else {
-                        echo '<td></td>';
+                        echo '<td '.$red_attribute.'></td>';
                     }
                 }
                 $query = "SELECT player_id FROM Battle_Detail WHERE battle_id=".$row_battle[0]." AND detail_team='Blue'";
                 $ret_detail_blue = mysqli_query($conn, $query);
                 for($index = 0; $index < 6; $index++){
                     if($row_detail_blue = mysqli_fetch_row($ret_detail_blue)){
-                        echo '<td>'.$row_detail_blue[0].'</td>';
+                        echo '<td '.$blue_attribute.'>'.$row_detail_blue[0].'</td>';
                     } else {
-                        echo '<td></td>';
+                        echo '<td '.$blue_attribute.'></td>';
                     }
                 }
                 echo '
                             <td>
-                                <a class="btn btn-danger" href="hero_delete.php?name='.$row[0].'">Delete</a>
+                                <a class="btn btn-secondary" href="battle_detail.php?id='.$row_battle[0].'">Detail</a>
                             </td>
                 ';
                 echo '</tr>';
@@ -61,3 +68,5 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
         </table>
     </div>
 </div>
+
+<? include "footer.php" ?>
