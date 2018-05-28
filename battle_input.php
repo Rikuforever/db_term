@@ -200,3 +200,5 @@ $ret_hero = mysqli_query($conn, $query);
         </div>
     </form>
 </div>
+
+<? include "footer.php"; ?>
