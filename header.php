@@ -43,11 +43,18 @@ function get_address(){
     </div>
     <div class="w3-bar-block">
         <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
-        <a href="battle_input.php" class="w3-bar-item w3-button w3-padding <? if(get_address() == "battle_input.php") echo "w3-green"; ?>"><i class="fas fa-plus fa-fw"></i>  Input Battle</a>
-        <a href="player_list.php" class="w3-bar-item w3-button w3-padding <? if(get_address() == "player_list.php") echo "w3-blue"; ?>"><i class="fa fa-users fa-fw"></i>  Player</a>
-        <a href="hero_list.php" class="w3-bar-item w3-button w3-padding <? if(get_address() == "hero_list.php") echo "w3-blue"; ?>"><i class="fa fa-eye fa-fw"></i>  Hero</a>
-        <a href="skin_list.php" class="w3-bar-item w3-button w3-padding <? if(get_address() == "skin_list.php") echo "w3-blue"; ?>"><i class="fa fa-users fa-fw"></i>  Skin</a>
-        <a href="rarity_list.php" class="w3-bar-item w3-button w3-padding <? if(get_address() == "rarity_list.php") echo "w3-blue"; ?>"><i class="fa fa-users fa-fw"></i>  Rarity</a>
+        <a href="battle_input.php" class="w3-bar-item w3-button w3-padding <?
+            if(get_address() == "battle_input.php") echo "w3-green"; ?>"><i class="fas fa-plus fa-fw"></i>  Input Battle</a>
+        <a href="battle_list.php" class="w3-bar-item w3-button w3-padding <?
+            if(get_address() == "battle_list.php") echo "w3-blue"; ?>"><i class="fas fa-plus fa-fw"></i>  Battle</a>
+        <a href="player_list.php" class="w3-bar-item w3-button w3-padding <?
+            if(get_address() == "player_list.php") echo "w3-blue"; ?>"><i class="fa fa-users fa-fw"></i>  Player</a>
+        <a href="hero_list.php" class="w3-bar-item w3-button w3-padding <?
+            if(get_address() == "hero_list.php") echo "w3-blue"; ?>"><i class="fa fa-eye fa-fw"></i>  Hero</a>
+        <a href="skin_list.php" class="w3-bar-item w3-button w3-padding <?
+            if(get_address() == "skin_list.php") echo "w3-blue"; ?>"><i class="fa fa-users fa-fw"></i>  Skin</a>
+        <a href="rarity_list.php" class="w3-bar-item w3-button w3-padding <?
+            if(get_address() == "rarity_list.php") echo "w3-blue"; ?>"><i class="fa fa-users fa-fw"></i>  Rarity</a>
     </div>
 </nav>
 

@@ -38,7 +38,7 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
                         <tr>
                             <th scope="row">'.$row_battle[0].'</th>
                 ';
-                $query = "SELECT player_id FROM Battle_Detail WHERE battle_id=".$row_battle[0]." AND detail_team='Red'";
+                $query = "SELECT player_name FROM Battle_Detail NATURAL JOIN Player WHERE battle_id=".$row_battle[0]." AND detail_team='Red'";
                 $ret_detail_red = mysqli_query($conn, $query);
                 for($index = 0; $index < 6; $index++){
                     if($row_detail_red = mysqli_fetch_row($ret_detail_red)){
@@ -47,7 +47,7 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
                         echo '<td '.$red_attribute.'></td>';
                     }
                 }
-                $query = "SELECT player_id FROM Battle_Detail WHERE battle_id=".$row_battle[0]." AND detail_team='Blue'";
+                $query = "SELECT player_name FROM Battle_Detail NATURAL JOIN Player WHERE battle_id=".$row_battle[0]." AND detail_team='Blue'";
                 $ret_detail_blue = mysqli_query($conn, $query);
                 for($index = 0; $index < 6; $index++){
                     if($row_detail_blue = mysqli_fetch_row($ret_detail_blue)){

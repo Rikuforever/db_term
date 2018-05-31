@@ -6,7 +6,7 @@ include "util.php";
 $conn = dbconnect($host,$dbid,$dbpass,$dbname);
 ?>
 
-    <!-- Add Rarity -->
+    <!-- Add Rarity
     <header class="w3-container" style="padding-top:22px">
         <h5><b><i class="fas fa-user-plus"></i> Add Rarity </b></h5>
     </header>
@@ -57,10 +57,11 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
             </div>
         </form>
     </div>
+    -->
 
-    <!-- Manage Players -->
+    <!-- Manage Rarity -->
     <header class="w3-container" style="padding-top:22px">
-        <h5><b><i class="fas fa-user-edit"></i> Manage Skins </b></h5>
+        <h5><b><i class="fas fa-user-edit"></i> Manage Rarity </b></h5>
     </header>
     <div class="w3-panel">
         <div class="w3-row-padding" style="margin:0 -16px">
@@ -86,7 +87,7 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
                             <td>'.$row[2].'</td>
                             <td>'.$row[3].'</td>
                             <td>
-                                <a class="btn btn-danger" href="rarity_delete.php?id='.$row[0].'">Delete</a>
+                                <a class="btn btn-secondary" href="rarity_edit.php?id='.$row[0].'">Edit</a>
                             </td>
                         </tr>
                     ';

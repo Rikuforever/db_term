@@ -71,6 +71,7 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
                             <td>'.$row[1].'</td>
                             <td>'.$row[2].'</td>
                             <td>
+                                <a class="btn btn-secondary" href="player_detail.php?id='.$row[0].'">Detail</a>
                                 <a class="btn btn-danger" href="player_delete.php?id='.$row[0].'">Delete</a>
                             </td>
                         </tr>
