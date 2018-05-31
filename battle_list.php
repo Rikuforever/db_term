@@ -56,11 +56,13 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
                         echo '<td '.$blue_attribute.'></td>';
                     }
                 }
+                /*
                 echo '
                             <td>
                                 <a class="btn btn-secondary" href="battle_detail.php?id='.$row_battle[0].'">Detail</a>
                             </td>
                 ';
+                */
                 echo '</tr>';
             }
             ?>

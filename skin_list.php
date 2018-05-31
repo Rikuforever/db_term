@@ -78,9 +78,9 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
                 <thead>
                 <tr>
                     <th scope="col" style="width : 5%">#</th>
-                    <th scope="col" style="width : 25%">Name</th>
                     <th scope="col" style="width : 25%">Hero</th>
                     <th scope="col" style="width : 25%">Rarity</th>
+                    <th scope="col" style="width : 25%">Name</th>
                     <th scope="col" style="width : 10%"></th>
                 </tr>
                 </thead>
@@ -96,7 +96,7 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
                             <td>'.$row[2].'</td>
                             <td>'.$row[3].'</td>
                             <td>
-                                <a class="btn btn-danger" href="player_delete.php?id='.$row[0].'">Delete</a>
+                                <a class="btn btn-danger" href="skin_delete.php?id='.$row[0].'">Delete</a>
                             </td>
                         </tr>
                     ';
