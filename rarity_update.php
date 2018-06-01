@@ -10,26 +10,30 @@ $rarity_price = check_injection($_POST['rarity_price']);
 $rarity_duplicate = check_injection($_POST['rarity_duplicate']);
 $rarity_gachavalue = check_injection($_POST['rarity_gachavalue']);
 
-// check duplicates
+// check name
 $query = 'SELECT rarity_name FROM Rarity WHERE rarity_name="'.$rarity_name.'"';
 $res = mysqli_query($conn,$query);
 $num = mysqli_num_rows($res);
 
-if($num){   // have duplicates
-    msg("The name is already taken!");
+if(!$num){   // no matching name
+    msg("No matching rarity name!");
 } else {
-    // add rarity
+    // update rarity
     $query = '
-      INSERT INTO Rarity (rarity_name, rarity_price, rarity_duplicate, rarity_gachavalue) 
-      VALUES ("'.$rarity_name.'","'.$rarity_price.'","'.$rarity_duplicate.'","'.$rarity_gachavalue.'")
+      UPDATE Rarity 
+      SET 
+        rarity_price='.$rarity_price.', 
+        rarity_duplicate='.$rarity_duplicate.',
+        rarity_gachavalue='.$rarity_gachavalue.' 
+      WHERE rarity_name="'.$rarity_name.'"
     ';
     $res = mysqli_query($conn,$query);
 
     if($res){
-        s_msg("Add complete!");
+        s_msg("Updated!");
     }
     else{
-        s_msg("[SQL Error] unsuccessful insertion");
+        s_msg("[SQL Error] unsuccessful update");
     }
 }
 

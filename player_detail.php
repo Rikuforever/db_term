@@ -193,4 +193,50 @@ mysqli_free_result($res_lose);
         </div>
     </div>
 
+
+    <!-- Skin List -->
+<?php
+$query = '
+  SELECT rarity_name, hero_name, skin_name
+  FROM Player_Skin NATURAL JOIN Skin
+  ORDER BY
+    CASE rarity_name
+    WHEN "Legendary" THEN 1
+    WHEN "Epic" THEN 2
+    WHEN "Rare" THEN 3
+    WHEN "Common" THEN 4
+  WHERE player_id="'.$player_id.'"  
+';
+$res = mysqli_query($conn, $query);
+?>
+    <header class="w3-container" style="padding-top:22px">
+        <h5><b><i class="fas fa-user-edit"></i> Skin List </b></h5>
+    </header>
+    <div class="w3-panel">
+        <div class="w3-row-padding" style="margin:0 -16px">
+            <table class="table table-sm table-striped table-hover">
+                <thead>
+                <tr>
+                    <th class="text-center" scope="col" style="width : 25%">Rarity</th>
+                    <th class="text-center" scope="col" style="width : 25%">Hero</th>
+                    <th class="text-center" scope="col" style="width : 25%">Name</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <?php
+                    while($row = mysqli_fetch_row($ret)){
+                        echo '
+                            <td>'.$row[0].'</td>
+                            <td>'.$row[1].'</td>
+                            <td>'.$row[2].'</td>
+                        ';
+                    }
+                    ?>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
 <? include "footer.php"; ?>
