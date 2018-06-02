@@ -8,7 +8,7 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
 
     <!-- Add hero -->
     <header class="w3-container" style="padding-top:22px">
-        <h5><b><i class="fas fa-user-plus"></i> Add hero </b></h5>
+        <h5><b><i class="fas fa-plus"></i> Add hero </b></h5>
     </header>
     <script>
         function value_check(){
@@ -50,7 +50,7 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
 
     <!-- Manage heros -->
     <header class="w3-container" style="padding-top:22px">
-        <h5><b><i class="fas fa-user-edit"></i> Manage Heros </b></h5>
+        <h5><b><i class="fas fa-edit"></i> Manage Heros </b></h5>
     </header>
     <div class="w3-panel">
         <div class="w3-row-padding" style="margin:0 -16px">

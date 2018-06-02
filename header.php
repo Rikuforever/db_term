@@ -46,15 +46,15 @@ function get_address(){
         <a href="battle_input.php" class="w3-bar-item w3-button w3-padding <?
             if(get_address() == "battle_input.php") echo "w3-green"; ?>"><i class="fas fa-plus fa-fw"></i>  Input Battle</a>
         <a href="battle_list.php" class="w3-bar-item w3-button w3-padding <?
-            if(get_address() == "battle_list.php") echo "w3-blue"; ?>"><i class="fas fa-plus fa-fw"></i>  Battle</a>
+            if(get_address() == "battle_list.php") echo "w3-blue"; ?>"><i class="fas fa-clipboard-list fa-fw"></i>  Battle</a>
         <a href="player_list.php" class="w3-bar-item w3-button w3-padding <?
             if(get_address() == "player_list.php") echo "w3-blue"; ?>"><i class="fa fa-users fa-fw"></i>  Player</a>
         <a href="hero_list.php" class="w3-bar-item w3-button w3-padding <?
-            if(get_address() == "hero_list.php") echo "w3-blue"; ?>"><i class="fa fa-eye fa-fw"></i>  Hero</a>
+            if(get_address() == "hero_list.php") echo "w3-blue"; ?>"><i class="fab fa-discord fa-fw"></i>  Hero</a>
         <a href="skin_list.php" class="w3-bar-item w3-button w3-padding <?
-            if(get_address() == "skin_list.php") echo "w3-blue"; ?>"><i class="fa fa-users fa-fw"></i>  Skin</a>
+            if(get_address() == "skin_list.php") echo "w3-blue"; ?>"><i class="fas fa-tshirt fa-fw"></i>  Skin</a>
         <a href="rarity_list.php" class="w3-bar-item w3-button w3-padding <?
-            if(get_address() == "rarity_list.php") echo "w3-blue"; ?>"><i class="fa fa-users fa-fw"></i>  Rarity</a>
+            if(get_address() == "rarity_list.php") echo "w3-blue"; ?>"><i class="fas fa-gem fa-fw"></i>  Rarity</a>
     </div>
 </nav>
 

@@ -8,7 +8,7 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
 
 <!-- List Battles -->
 <header class="w3-container" style="padding-top:22px">
-    <h5><b><i class="fas fa-user-edit"></i> Battle Log </b></h5>
+    <h5><b><i class="fas fa-clipboard-list"></i> Battle Log </b></h5>
 </header>
 <div class="w3-panel">
     <div class="w3-row-padding" style="margin:0 -16px">

@@ -50,7 +50,7 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
                 </select>
             </div>
             <div class="form-group col-md-5">
-                <label for="rarity_name">Hero</label>
+                <label for="rarity_name">Rarity</label>
                 <select class="custom-select" name="rarity_name" id="rarity_name">
                     <option disabled selected value="">Select rarity</option>
                     <?php
@@ -71,7 +71,7 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
 
     <!-- Give Skin -->
     <header class="w3-container" style="padding-top:22px">
-        <h5><b><i class="fas fa-user-plus"></i> Give Skin </b></h5>
+        <h5><b><i class="fas fa-gift"></i> Give Skin </b></h5>
     </header>
     <script>
         function value_check_give(){
@@ -105,7 +105,7 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
                 </select>
             </div>
             <div class="form-group col-md-5">
-                <label for="player_id">Hero</label>
+                <label for="player_id">Player</label>
                 <select class="custom-select" name="player_id" id="player_id">
                     <option disabled selected value="">Select player</option>
                     <?php
@@ -126,7 +126,7 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
 
     <!-- Manage Players -->
     <header class="w3-container" style="padding-top:22px">
-        <h5><b><i class="fas fa-user-edit"></i> Manage Skins </b></h5>
+        <h5><b><i class="fas fa-edit"></i> Manage Skins </b></h5>
     </header>
     <div class="w3-panel">
         <div class="w3-row-padding" style="margin:0 -16px">

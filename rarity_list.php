@@ -8,7 +8,7 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
 
     <!-- Edit Rarity -->
     <header class="w3-container" style="padding-top:22px">
-        <h5><b><i class="fas fa-user-plus"></i> Edit Rarity </b></h5>
+        <h5><b><i class="fas fa-edit"></i> Edit Rarity </b></h5>
     </header>
     <script>
         function value_check(){
@@ -69,7 +69,7 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
 
     <!-- Manage Rarity -->
     <header class="w3-container" style="padding-top:22px">
-        <h5><b><i class="fas fa-user-edit"></i> Manage Rarity </b></h5>
+        <h5><b><i class="fas fa-edit"></i> Manage Rarity </b></h5>
     </header>
     <div class="w3-panel">
         <div class="w3-row-padding" style="margin:0 -16px">
