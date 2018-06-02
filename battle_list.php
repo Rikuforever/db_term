@@ -56,6 +56,7 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
                         echo '<td '.$blue_attribute.'></td>';
                     }
                 }
+                        echo '<td></td>';
                 /*
                 echo '
                             <td>

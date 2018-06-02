@@ -6,15 +6,15 @@ include "util.php";
 $conn = dbconnect($host,$dbid,$dbpass,$dbname);
 ?>
 
-    <!-- Add Rarity
+    <!-- Edit Rarity -->
     <header class="w3-container" style="padding-top:22px">
-        <h5><b><i class="fas fa-user-plus"></i> Add Rarity </b></h5>
+        <h5><b><i class="fas fa-user-plus"></i> Edit Rarity </b></h5>
     </header>
     <script>
         function value_check(){
-            var form = document.rarity_add_form;
-            if(!form.rarity_name.value){
-                alert("Please fill in name.");
+            var form = document.rarity_edit_form;
+            if(form.rarity_name.value == ""){
+                alert("Choose name.");
                 form.rarity_name.focus();
                 return false;
             } else if(!form.rarity_price.value){
@@ -35,10 +35,19 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
         }
     </script>
     <div class="w3-panel">
-        <form name="rarity_add_form" method="post" onsubmit="return value_check()" action="rarity_insert.php">
+        <form name="rarity_edit_form" method="post" onsubmit="return value_check()" action="rarity_update.php">
             <div class="form-group col-md-5">
                 <label for="rarity_name">Name</label>
-                <input type="text" class="form-control" name="rarity_name" id="rarity_name" placeholder="Name" minlength="1" maxlength="50"/>
+                <select class="custom-select" name="rarity_name" id="rarity_name">
+                    <option disabled selected value="">Rarity name</option>
+                    <?php
+                    $query = 'SELECT rarity_name FROM Rarity';
+                    $ret = mysqli_query($conn,$query);
+                    while($row = mysqli_fetch_row($ret)){
+                        echo '<option value="'.$row[0].'">'.$row[0].'</option>';
+                    }
+                    ?>
+                </select>
             </div>
             <div class="form-group col-md-5">
                 <label for="rarity_price">Price</label>
@@ -53,11 +62,10 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
                 <input type="number" class="form-control" name="rarity_gachavalue" id="rarity_gachavalue" placeholder="Gacha Value" min="1"/>
             </div>
             <div class="form-group col-md-2">
-                <button type="submit" class="btn btn-primary">Add</button>
+                <button type="submit" class="btn btn-primary">Edit</button>
             </div>
         </form>
     </div>
-    -->
 
     <!-- Manage Rarity -->
     <header class="w3-container" style="padding-top:22px">
@@ -86,9 +94,6 @@ $conn = dbconnect($host,$dbid,$dbpass,$dbname);
                             <td>'.$row[1].'</td>
                             <td>'.$row[2].'</td>
                             <td>'.$row[3].'</td>
-                            <td>
-                                <a class="btn btn-secondary" href="rarity_edit.php?id='.$row[0].'">Edit</a>
-                            </td>
                         </tr>
                     ';
                 }
