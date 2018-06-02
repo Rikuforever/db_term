@@ -76,9 +76,9 @@ while($row = mysqli_fetch_row($res)){
                 <tbody>
                 <tr>
                     <td class="text-center"><? echo $play_count; ?></td>
-                    <td class="text-center"><? echo ($win_count / $play_count) * 100; ?>%</td>
-                    <td class="text-center"><? echo ($kill_count / $play_count); ?></td>
-                    <td class="text-center"><? echo ($death_count / $play_count); ?></td>
+                    <td class="text-center"><? echo round(($win_count / $play_count) * 100,2); ?>%</td>
+                    <td class="text-center"><? echo round(($kill_count / $play_count),2); ?></td>
+                    <td class="text-center"><? echo round(($death_count / $play_count),2); ?></td>
                 </tr>
                 </tbody>
             </table>
@@ -179,9 +179,9 @@ while($row_win = mysqli_fetch_row($res_win)){
     echo    '<td>'.$hero_name.'</td>';
     echo    '<td>'.$hero_role.'</td>';
     echo    '<td>'.$play_count.'</td>';
-    echo    '<td>'.($win_count / ($win_count+$lose_count) * 100).'%</td>';
-    echo    '<td>'.($kill_count / $play_count).'</td>';
-    echo    '<td>'.($death_count / $play_count).'</td>';
+    echo    '<td>'.round(($win_count / ($win_count+$lose_count) * 100),2).'%</td>';
+    echo    '<td>'.round(($kill_count / $play_count),2).'</td>';
+    echo    '<td>'.round(($death_count / $play_count),2).'</td>';
     echo '</tr>';
 }
 
@@ -225,17 +225,18 @@ $res = mysqli_query($conn, $query);
                 </tr>
                 </thead>
                 <tbody>
-                <tr>
+
                     <?php
                     while($row = mysqli_fetch_row($res)){
                         echo '
-                            <td>'.$row[0].'</td>
-                            <td>'.$row[1].'</td>
-                            <td>'.$row[2].'</td>
+                            <tr>
+                                <td>'.$row[0].'</td>
+                                <td>'.$row[1].'</td>
+                                <td>'.$row[2].'</td>
+                            </tr>
                         ';
                     }
                     ?>
-                </tr>
                 </tbody>
             </table>
         </div>
