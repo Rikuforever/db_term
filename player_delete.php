@@ -17,16 +17,27 @@ $num = mysqli_num_rows($res);
 if(!$num){   // have duplicates
     msg("No matching ID!");
 } else {
-    // add player
+    // [TRANSACTION] Setup
+    mysqli_query($conn, "set autocommit = 0");
+    mysqli_query($conn, "set session transaction isolation level read committed");  // [TRANSACTION] Isolation Level : READ COMMITTED
+    mysqli_query($conn, "begin");
+
+    // delete player
     $query = 'DELETE FROM Player WHERE player_id="'.$player_id.'"';
     $res = mysqli_query($conn,$query);
 
+    // [TRANSACTION] Check
     if($res){
-        s_msg("Delete complete!");
+        mysqli_query($conn,"commit");   // [TRANSACTION] Success
+        msg("Delete complete!");
     }
     else{
-        s_msg("[SQL Error] unsuccessful insertion");
+        mysqli_query($conn,"rollback"); // [TRANSACTION] Fail
+        s_msg("[SQL Error] unsuccessful deletion");
     }
+
+    // [TRANSACTION] Dispose
+    mysqli_query($conn, "set autocommit = 1");
 }
 
 echo "<meta http-equiv='refresh' content='0;url=player_list.php'>";

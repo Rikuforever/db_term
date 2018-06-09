@@ -15,16 +15,27 @@ $num = mysqli_num_rows($res);
 if($num){   // have duplicates
     msg("The name is already taken!");
 } else {
-    // add player
+    // [TRANSACTION] Setup
+    mysqli_query($conn, "set autocommit = 0");
+    mysqli_query($conn, "set session transaction isolation level read committed");  // [TRANSACTION] Isolation Level : READ COMMITTED
+    mysqli_query($conn, "begin");
+
+    // add hero
     $query = 'INSERT INTO Hero (hero_name, hero_role) VALUES ("'.$hero_name.'","'.$hero_role.'")';
     $res = mysqli_query($conn,$query);
 
+    // [TRANSACTION] Check
     if($res){
-        s_msg("Add complete!");
+        mysqli_query($conn,"commit");   // [TRANSACTION] Success
+        msg("Add complete!");
     }
     else{
+        mysqli_query($conn,"rollback"); // [TRANSACTION] Fail
         s_msg("[SQL Error] unsuccessful insertion");
     }
+
+    // [TRANSACTION] Dispose
+    mysqli_query($conn, "set autocommit = 1");
 }
 
 echo "<meta http-equiv='refresh' content='0;url=hero_list.php'>";
